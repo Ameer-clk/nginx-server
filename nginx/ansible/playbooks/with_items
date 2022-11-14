@@ -1,0 +1,10 @@
+---
+- hosts: nginx
+  tasks:
+
+  - name: "nginx items"
+    debug:
+      msg: "items: [ item ]"
+    with_items: 
+    - start nginx 
+    - ngixn conf if want
